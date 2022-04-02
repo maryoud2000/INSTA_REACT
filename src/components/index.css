@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+.photoBox {
+    width: 30vw;
+    height: 40vh;
+    border: gray solid 1px;
+    margin-bottom: 15px;
+  
+}
+
+h1 {
+    width: 100%;
+    margin-top: 0%;
+    height: 50px;
+    text-align: center;
+    border: gray solid 1px;
+    background-color: white;
+    font-family: 'Grand Hotel', cursive;
+}
+
+button{
+    font-family: 'Open Sans', sans-serif;
+    font-size:small;
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-color: #2087fd;
+    border: solid grey 1px;
+}
+
+button:hover {
+    background-color: #445ffa;
+    border-radius: 50%;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.grabBotton, .signupBotton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+

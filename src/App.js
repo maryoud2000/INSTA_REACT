@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import styled from "styled-components";
+import { Login } from "./components/login";
+import { Home } from "./components/home";
+import Profile from "./components/userProfile";
 
-function App() {
+const App = () => {
+  const [user, setUser] = useState();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login setUser={setUser} user={user} />} />
+        <Route path="/home" element={<Home user={user} setUser={setUser} />} />
+        <Route path="/userProfile" element={<Profile user={user} setUser={setUser} />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
+
+const Page = styled(BrowserRouter)`
+  width: 100vw;
+`;
 
 export default App;
