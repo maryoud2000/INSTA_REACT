@@ -1,4 +1,3 @@
-import showImage from "../showimage/showImage";
 import "./photoContainer.css";
 
 const PhotoContainer = ({ photo }) => {
