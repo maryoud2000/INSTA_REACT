@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import styled from "styled-components";
-import { Login } from "./components/login";
-import { Home } from "./components/home";
-import Profile from "./components/userProfile";
+import Login from "./components/login/login";
+import Home from "./components/home/home";
+import Profile from "./components/profile/userProfile";
 
 const App = () => {
   const [user, setUser] = useState();
@@ -18,9 +17,5 @@ const App = () => {
     </BrowserRouter>
   );
 };
-
-const Page = styled(BrowserRouter)`
-  width: 100vw;
-`;
 
 export default App;

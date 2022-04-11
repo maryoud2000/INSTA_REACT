@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.navbarContainer {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    height: 80%;
+    font-size: large;
+    color: #3b0b34;
+    background-color: #ECCE8E;
+}
+
+.navButtons {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    background-color: #270722; 
+}
+
+a:link, a:visited, #logoutBtn { 
+    padding: 0px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size:small;
+    background-color: #270722; 
+}
+  
+a:hover, a:active, #logoutBtn:hover {
+    cursor: hand;
+    cursor: pointer;
+    border-radius: 0%;
+    background-color: #aa5e9f;
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.loginpage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.FormContainer {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2%;
+    border: solid #270722 2px;
+    background-color: #27072254;
+    font-family: 'M PLUS Code Latin', sans-serif;
+}
+
+.signupBotton, .submitBottom {
+    margin-top: 20px;
+}
+
+h1 {
+    color: #270722; 
+    font-family: 'Grand Hotel', cursive;
+}
+
+button {
+    border: 0px;
+    background-color: #270722; 
+    padding: 0px 25px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:small;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background-color: #aa5e9f;
+    border-radius: 50%;
+    cursor: pointer;
+    cursor: hand;
+}

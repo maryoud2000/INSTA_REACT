@@ -6,7 +6,7 @@ export const createUser = async (username, email, pass, setter) => {
         body: JSON.stringify({
           username: username,
           email: email,
-          password: pass,
+          pass: pass,
         }),
       });
       const data = await response.json();
@@ -24,7 +24,7 @@ export const createUser = async (username, email, pass, setter) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           username: username,
-          password: pass,
+          pass: pass,
         }),
       });
       const data = await response.json();
@@ -47,3 +47,25 @@ export const createUser = async (username, email, pass, setter) => {
       console.log(error);
     }
   };
+
+  export const updatePass = async (user, passUpdate) => {
+    try {
+        const response = await fetch(`${process.env.REACT_APP_REST_API}user`,{
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${localStorage.getItem("myToken")}`,
+        },
+            body: JSON.stringify({
+                username: user,
+               pass: passUpdate
+                })
+            });
+        const data = await response.JSON()
+        if (!data.msg) {
+            throw new Error(data.err)
+        }
+    } catch (error) {
+        console.log()
+    }
+};

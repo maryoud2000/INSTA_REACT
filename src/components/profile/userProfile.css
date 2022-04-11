@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+.profilePage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profileContainer {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileInfo {
+    width: 25%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Hind', sans-serif;
+}
+
+.userProfile {
+    display: flex;
+    flex-direction: column;
+    color: #3b0b34;
+}
+
+.profileImage {
+    width: 25%;
+    height: 60%;
+}
+
+h2 {
+    font-family: 'Nunito Sans', sans-serif;
+}

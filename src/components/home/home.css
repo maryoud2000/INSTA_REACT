@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.grabButton {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-block: 30px;
+}
+
+.PhotoPage {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+};
+
